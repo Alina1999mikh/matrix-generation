@@ -1,3 +1,4 @@
+import generation.NoSymmetric;
 import generation.Symmetric;
 
 public class Main {
@@ -10,8 +11,12 @@ public class Main {
             mat.printMatrix();
         }
 
-//        NoSymmetric noS = new NoSymmetric(6);
-//        noS.generation();
-//        noS.printMatrix();
+        for (int i = 0; i < 20; i++) {
+            NoSymmetric noS = new NoSymmetric(7);
+            noS.generation();
+            noS.diagonal('∞');
+            System.out.println(i + 1 + ". ");
+            noS.printMatrix();
+        }
     }
 }

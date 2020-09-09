@@ -21,15 +21,17 @@ public class Matrix {
         System.out.println();
     }
 
-    public char[][] getMatrix() {
-        return matrix;
+    public void diagonal(char val) {
+        for (int i = 0; i < row(); i++) {
+            matrix[i][i] = val;
+        }
     }
 
-    public int pill() {
+    protected int pill() {
         return pill;
     }
 
-    public int row() {
+    protected int row() {
         return row;
     }
 }

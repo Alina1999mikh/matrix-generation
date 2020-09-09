@@ -17,10 +17,4 @@ public class Symmetric extends Matrix implements Generation {
             }
         }
     }
-
-    public void diagonal(char val) {
-        for (int i = 0; i < row(); i++) {
-            matrix[i][i] = val;
-        }
-    }
 }
